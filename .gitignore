@@ -1,0 +1,4 @@
+node_modules/
+contact_data_.xlsx
+~$contact_data_.xlsx
+.env
