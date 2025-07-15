@@ -40,7 +40,7 @@ contactForm.addEventListener("submit", function (e) {
   const email = this.querySelector('input[placeholder="Your Email"]').value.trim();
   const message = this.querySelector('textarea').value.trim();
 
-  fetch("http://localhost:3000/submit", {
+  fetch("https://portfolio-backend-fv5k.onrender.com/submit", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ name, email, message })
