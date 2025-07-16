@@ -14,7 +14,11 @@
 
   <!-- Header -->
   <header>
+    <!--<div class="logo">Shashank</div> --->
     <div class="logo">Shashank</div>
+    <div class="hamburger" id="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
     <nav>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
@@ -29,6 +33,25 @@
       </ul>
     </nav>
   </header>
+  
+ //added for hamdurger menu and click  
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("nav-links");
+  const navItems = document.querySelectorAll(".nav-links a");
+
+  // Toggle menu on hamburger click
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("show-nav");
+  });
+
+  // Hide menu when any nav link is clicked
+  navItems.forEach(link => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("show-nav");
+    });
+  });
+</script>
 
   <!-- Hero Section -->
 <section id="home" class="hero" style="background-image: url('images/backgroungImage__.jpg');">
