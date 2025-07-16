@@ -447,6 +447,15 @@ footer {
   }
 }
 
+/* Hamburger */
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  color: #fff;
+  cursor: pointer;
+  z-index: 2000;
+}
+
 /* Mobile Layout Fixes */
 @media (max-width: 768px) {
   .hamburger {
